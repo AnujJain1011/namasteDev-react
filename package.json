@@ -1,0 +1,30 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is namaste react by akshay bhaiya",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnujJain1011/namasteDev-react.git"
+  },
+  "author": "Anuj Jain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnujJain1011/namasteDev-react/issues"
+  },
+  "homepage": "https://github.com/AnujJain1011/namasteDev-react#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
