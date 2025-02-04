@@ -21,4 +21,7 @@
 - Provides Different dev and prod bundles
 
 - browserslist (https://browserslist.dev/)
+
   - Add it in package.json to certainly configure your webapp to selected browser versions
+
+- Replaced React from CDN links with the React from npm ----
