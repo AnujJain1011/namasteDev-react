@@ -25,3 +25,10 @@
   - Add it in package.json to certainly configure your webapp to selected browser versions
 
 - Replaced React from CDN links with the React from npm ----
+
+# Babel (https://babeljs.io/)
+
+- Converts(transpiles) JSX code to React.createElement(Js engine understandible code)
+- It is a javascript compiler needed by Parcel to do all this conversion
+- It reads the characters(tokens) one by one -> then create AST -> JS engine understandible code
+- It even converts ES6 to older JS versions/older browser compatible JS.
