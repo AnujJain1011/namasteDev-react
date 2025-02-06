@@ -10,11 +10,28 @@ import ReactDOM from "react-dom/client";
 // React.createElement => ReactElement - Js Object => HTMLElement(render)
 const heading = React.createElement("h1", { id: "heading" }, "Akshay is here!");
 
-console.log(heading);
-//JSX => Babel transpiles it to React.createElement => ReactElement - Js Object => HTMLElement(render)
-const JSXheading = <h1 id="head">Namaste React from JSX 🚀</h1>;
+//Functional Component
+const Title = () => <h1 id="title">Namaste React from JSX 🚀</h1>;
+
+//Component Composition
+var Heading = () => (
+  <div>
+    {heading}
+    {Title()}
+    <Title />
+    <Title></Title>
+    <h1 className="heading">Namaste React from Functional Component 🚀</h1>
+  </div>
+);
+
+const elem = (
+  <h1>
+    BOOM!!!!
+    {/* a component inside a react element */}
+    <Heading />
+  </h1>
+);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-console.log(JSXheading);
-
-root.render(JSXheading);
+root.render(elem);
