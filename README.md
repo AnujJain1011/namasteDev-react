@@ -32,3 +32,11 @@
 - It is a javascript compiler needed by Parcel to do all this conversion
 - It reads the characters(tokens) one by one -> then create AST -> JS engine understandible code
 - It even converts ES6 to older JS versions/older browser compatible JS.
+
+- Functional components:
+- The functional components are just the normal javascript functions that returns a JSX code/React Element.
+- < functional component/>
+- props
+- passing props to a functional component is just like passing arguements to a js function.
+- many times the props are destructed on the fly using array de-structuring.
+  const { resName } = resData?.info;
