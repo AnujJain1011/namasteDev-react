@@ -1,27 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-const Header = () => {
-  return (
-    <div className="header">
-      <div className="logo-container">
-        <img
-          className="logo"
-          src="https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png?nwm=1&nws=1&industry=fast-food&sf=&txt_keyword=All"
-        />
-      </div>
-      <div className="nav-items">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact Us</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-
 const resList = [
   {
     info: {
@@ -768,53 +744,4 @@ const resList = [
   },
 ];
 
-const RestaurantCard = (props) => {
-  const { resData } = props;
-  const { name, avgRating, cuisines, costForTwo } = resData?.info;
-  const { slaString } = resData?.info?.sla;
-  return (
-    <div className="res-logo">
-      <img
-        alt="res-logo"
-        src={
-          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-          resData?.info?.cloudinaryImageId
-        }
-      ></img>
-      <div className="res-details">
-        <h4>{name}</h4>
-        <span>{avgRating} ⭐,</span>
-        <span>{slaString}</span>
-        <p>{cuisines.join(", ")}</p>
-        <p>{costForTwo}</p>
-      </div>
-    </div>
-  );
-};
-
-// not using keys(not acceptable) <<<< using index as key <<<<<<<<<<<<<< using unique id as key(best practice)
-const Body = () => {
-  return (
-    <div className="body-container">
-      <div className="search">Search</div>
-      <div className="res-container">
-        {resList.map((restaurant) => (
-          <RestaurantCard key={restaurant?.info?.id} resData={restaurant} />
-        ))}
-      </div>
-    </div>
-  );
-};
-
-const AppLayout = () => {
-  return (
-    <div className="app-container">
-      <Header />
-      <Body />
-    </div>
-  );
-};
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(<AppLayout />);
+export default resList;

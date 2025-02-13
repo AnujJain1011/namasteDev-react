@@ -43,3 +43,29 @@
 - passing props to a functional component is just like passing arguements to a js function.
 - many times the props are destructed on the fly using array de-structuring.
   const { resName } = resData?.info;
+
+# Two types of imports and exports
+
+- default exports : export default name;
+- import name from "path";
+- used for exporting single thing
+
+- Named exports : export const CDN_URL;
+- import {CDN_URL} from "path";
+- Used when we want to export multiple things
+
+# Hooks
+
+- These are the normal javascript utility functions.
+
+- One is the useState() , which provides us the SuperPowerful state variable
+  these state variables tracks our component and maintains the state of the component
+
+- it is imported from react ,as a Named import
+- const arr = useState(resList) // this returns an array
+  const [listOfRestaurants , setListOfRestaurants] = arr; // array de-structuring
+- Whenever my state varible updates , the setListOfRestaurants triggers the reconciliation cycle and update the virtual dom by calculating the diff(changes in the object nodes) using diff Algorithm ,then react will re-render my component
+
+- It's very smart it never renders the complete thing again and again and only renders the new changes in the UI.
+
+- Basically it keeps our UI and Data layer in sync with each other.

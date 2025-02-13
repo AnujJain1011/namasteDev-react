@@ -23,6 +23,10 @@
     border: 1px solid black;
     padding: 10px;
 }
+.filter-btn{
+    margin: 5px;
+    cursor: pointer;
+}
 
 .res-container{
     display: flex;
@@ -54,3 +58,4 @@
     margin: 1px;
     padding: 1px;
 }
+
