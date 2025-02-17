@@ -30,6 +30,7 @@ const Body = () => {
     // console.log(json);
   };
 
+  // conditional rendering
   return listOfRestaurants.length === 0 ? (
     <Shimmer />
   ) : (

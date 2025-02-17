@@ -79,3 +79,5 @@
 - if you don not pass the dependency array useEffect(()=>{}) => useEffect will call the function every time the component is rendered
 - if you pass an empty dependency array useEffect(()=>{},[]) => function will be called only once at time of initial render.
 - if you pass some element in dependency array useEffect(()=>{},[btnName]) => function will be called everytime the element is updated.
+
+- fetch is done inside useEffect()
