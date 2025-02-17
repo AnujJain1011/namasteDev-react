@@ -69,3 +69,13 @@
 - It's very smart it never renders the complete thing again and again and only renders the new changes in the UI.
 
 - Basically it keeps our UI and Data layer in sync with each other.
+
+# useEffect
+
+- useEffect is required for performing async operations in react i.e for performing anything after the initial render
+- it takes two arguements
+  - the callback function (compulsary)
+  - the dependency array (optional)
+- if you don not pass the dependency array useEffect(()=>{}) => useEffect will call the function every time the component is rendered
+- if you pass an empty dependency array useEffect(()=>{},[]) => function will be called only once at time of initial render.
+- if you pass some element in dependency array useEffect(()=>{},[btnName]) => function will be called everytime the element is updated.
