@@ -58,6 +58,8 @@
 
 - These are the normal javascript utility functions.
 
+# useState
+
 - One is the useState() , which provides us the SuperPowerful state variable
   these state variables tracks our component and maintains the state of the component
 
@@ -98,7 +100,7 @@
 class UserClass extends React.Component{
 
 }
-React.Component is an in-built class which is getting inherited
+React.Component is an in-built class which is getting inherited from React.
 
 # React Lifecycle Methods Diagram:
 
