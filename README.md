@@ -127,7 +127,8 @@ Parent Render
     Second ComponentDid Mount
     Third ComponentDid Mount
 
-Parent CpmponentDidMount
+Parent ComponentDidMount
 
 - Mounting => the initial phase of loading the data on the web page and inserting it into the DOM is called as Mounting, i.e then our page is said to be Mounted.
+
 - https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
