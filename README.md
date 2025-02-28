@@ -81,3 +81,53 @@
 - if you pass some element in dependency array useEffect(()=>{},[btnName]) => function will be called everytime the element is updated.
 
 - fetch is done inside useEffect()
+
+# 2 types of Routing in web apps
+
+- Client side routing.
+  - Single page web application
+- Server side routing.
+
+  - Older way of routing = we make a network call
+
+- Static Routing => those routes that we created like '/', '/about'
+- Dynamic Routing = route are not fixed ,ex we have a dynamic route for every restaurant
+
+# Class Based Components
+
+class UserClass extends React.Component{
+
+}
+React.Component is an in-built class which is getting inherited
+
+# React Lifecycle Methods Diagram:
+
+1. Constructor function
+2. Render Method
+3. ComponentDidMount
+
+Q. Why React is Fast ?? - Complete React Fibre with this.
+
+## RENDER PHASE
+
+Parent Constructor
+Parent Render
+
+  <All light Tasks In Single Batch>
+    {First Constructor
+    First Render
+    Second constructor
+    Second Render
+    Third Constructor
+    Third Render} 
+    
+ ## COMMIT PHASE
+  <expensive Dom Manipulation in Single Batch>
+    First ComponentDid Mount
+    Second ComponentDid Mount
+    Third ComponentDid Mount
+
+Parent CpmponentDidMount
+
+- Mounting => the initial phase of loading the data on the web page and inserting it into the DOM is called as Mounting, i.e then our page is said to be Mounted.
+- https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/

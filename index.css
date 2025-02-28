@@ -1,7 +1,8 @@
 .header{
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
+    box-shadow: 2px 0px 10px grey;
+    width: 100%;
 }
 
 .logo{
@@ -13,12 +14,17 @@
     list-style-type: none;
 }
 
-.nav-items > ul > li{
+.links{
     padding: 10px;
     margin: 10px;
+    text-decoration:dotted;
     font-size: 24px;
 }
 
+.body-container{
+    margin-left: 5%;
+    margin-right: 5%;
+}
 .search{
     border: 1px solid black;
     padding: 10px;
@@ -35,22 +41,30 @@
 
 }
 .res-logo{
-    margin: 8px 8px 8px 0px;
+    margin: 8px 12px 8px 0px;
     background-color: #ebeaea;
-    width: 235px;
+    width: 265px;
     padding: 8px;
+    border-radius: 10px;
+    transition: width 1s;
 }
 
 .res-logo>img{
     width: 100%;
-    height: 60%;
+    height: 50%;
+}
+.cuisine-class{
+    overflow: hidden;
+    overflow-wrap: break-word;
 }
 .res-logo:hover{
     border: 1px solid black;
     background-color: rgb(224, 222, 222);
     cursor: pointer;
+    width: 240px;
 }
 .res-details>p{
+    text-decoration-line: none;
     margin: 2px;
     padding: 1px;
 }
@@ -99,4 +113,38 @@
     cursor: pointer;
     font-weight: bold;
     font-size: medium;
+}
+
+.footer-container{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 1px;
+    background: gray;
+    /* margin-bottom: 20px; */
+}
+
+.toggle-btn{
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 3px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.veg{
+    background-color: #38b000;
+    color: white;
+}
+
+.both{
+    background-color: #edede9;
+}
+
+
+.user-card{
+    padding: 1px;
+    border: 1px solid black;
 }
